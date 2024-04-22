@@ -7,6 +7,7 @@ from dash.dependencies import Input, Output, State
 import numpy as np
 
 app = dash.Dash(__name__)
+server= app.server
 
 # Read energy consumption data
 energy_data = pd.read_csv('energy_consumption_data.csv')
